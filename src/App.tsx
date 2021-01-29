@@ -35,7 +35,7 @@ const App = (): JSX.Element => {
     setTodos(t);
   };
 
-  const deleteTodo = (id: string) => {
+  const deleteTodo = (id: string): void => {
     const to = todos.filter((todo) => todo.id !== id);
     setTodos(to);
   };
